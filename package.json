@@ -1,0 +1,70 @@
+{
+  "name": "minimal-react-boilerplate",
+  "version": "1.0.0",
+  "description": "A minimal react boilerplate with webpack, babel and sass support.",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server --config ./config/webpack/webpack.dev.js --mode development --open --hot",
+    "build": "cross-env NODE_ENV=production webpack -p --config ./config/webpack/webpack.prod.js",
+    "lint:eslint": "eslint . && echo \"No lint errors!\" && exit 0",
+    "lint:eslint:fix": "eslint . --fix && echo \"Lint errors fixed!\" && exit 0",
+    "format": "prettier \"**/*.{md,mdx,yml,css,scss} \" --write",
+    "test": "jest && echo \"ALL TESTS PASSED!\" && exit 0"
+  },
+  "author": "rishichawda",
+  "license": "MIT",
+  "repository": {
+    "url": "https://github.com/rishichawda/minimal-react-boilerplate"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "dependencies": {
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.4.5",
+    "@babel/plugin-proposal-class-properties": "^7.4.4",
+    "@babel/preset-env": "^7.5.5",
+    "@babel/preset-react": "^7.0.0",
+    "@babel/register": "^7.5.5",
+    "@testing-library/react": "^8.0.1",
+    "babel-eslint": "^10.0.2",
+    "babel-jest": "^24.8.0",
+    "babel-loader": "^8.0.6",
+    "babel-plugin-module-resolver": "^3.2.0",
+    "compression-webpack-plugin": "^3.0.0",
+    "cross-env": "^5.2.0",
+    "css-loader": "^3.2.0",
+    "dotenv-webpack": "^1.7.0",
+    "eslint": "^6.1.0",
+    "eslint-config-airbnb": "^17.1.1",
+    "eslint-config-prettier": "^6.0.0",
+    "eslint-config-rishikc": "0.0.2",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-prettier": "^3.1.0",
+    "eslint-plugin-react": "^7.14.3",
+    "eslint-plugin-react-hooks": "^1.7.0",
+    "html-webpack-plugin": "^3.2.0",
+    "husky": "^4.2.5",
+    "jest": "^24.8.0",
+    "jest-dom": "^3.5.0",
+    "lint-staged": "^8.2.1",
+    "node-sass": "^4.13.1",
+    "optimize-css-assets-webpack-plugin": "^5.0.3",
+    "prettier": "^1.18.2",
+    "react-test-renderer": "^16.13.0",
+    "sass-loader": "^7.3.1",
+    "style-loader": "^0.23.1",
+    "uglifyjs-webpack-plugin": "^2.2.0",
+    "url-loader": "^2.1.0",
+    "webpack": "^4.34.0",
+    "webpack-cli": "^3.3.4",
+    "webpack-dev-server": "^3.7.1",
+    "webpack-merge": "^4.2.1"
+  }
+}

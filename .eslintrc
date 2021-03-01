@@ -1,0 +1,24 @@
+{
+  "extends": ["rishikc"],
+  "globals": {
+    "cy": true
+  },
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "paths": ["src"]
+      }
+    }
+  },
+  "env": {
+    "browser": true
+  },
+  "rules": {
+    "no-unused-vars": [
+      1,
+      {
+        "argsIgnorePattern": "res|next|stage|^err|on|config"
+      }
+    ]
+  }
+}
