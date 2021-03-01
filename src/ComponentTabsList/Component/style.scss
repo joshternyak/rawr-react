@@ -1,0 +1,20 @@
+.Component {
+  padding: 1em;
+  cursor: pointer;
+  transition: 0.2s;
+  width: 100%;
+  text-align: left;
+  background: #e6f7ff;
+
+  &:hover {
+    background: #e6f7ff;
+  }
+
+  &--inactive {
+    background: transparent;
+
+    &:hover {
+      background: transparent;
+    }
+  }
+}

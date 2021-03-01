@@ -1,0 +1,13 @@
+.ComponentTabsList {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  min-width: 20vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  padding: 0;
+  border-right: 2px solid #e6f7ff;
+}
