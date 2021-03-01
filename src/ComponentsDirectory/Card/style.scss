@@ -37,6 +37,8 @@
   &__title {
     font-size: 21px;
     font-weight: 600;
+    padding-bottom: 5px;
+    margin-bottom: 0px;
 
     &--small {
       font-size: 18px;
@@ -49,6 +51,7 @@
 
   &__subtitle {
     font-size: 17.5px;
+    margin-top: 4px;
 
     &--small {
       font-size: 16px;

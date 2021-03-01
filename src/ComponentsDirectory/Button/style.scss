@@ -1,0 +1,90 @@
+.Button {
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 8px;
+  margin-bottom: 12px;
+  color: #fff;
+  line-height: 1.499;
+  position: relative;
+  display: inline-block;
+  font-weight: 400;
+  white-space: nowrap;
+  transition: all 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
+  user-select: none;
+  touch-action: manipulation;
+  padding: 7px 15px;
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.65);
+  background-color: #fff;
+  border-color: #d9d9d9;
+  box-shadow: none;
+  outline: none;
+  border-width: 0.75px;
+  max-width: max-content;
+
+  &:hover {
+    opacity: 0.75;
+  }
+
+  &--primary {
+    color: #fff;
+    background-color: #1890ff;
+    border-color: #1890ff;
+  }
+
+  &--dashed {
+    color: rgba(0, 0, 0, 0.65);
+    background-color: #fff;
+    border-color: #d9d9d9;
+    border-style: dashed;
+  }
+
+  &--danger {
+    color: #fff;
+    background-color: #ff4d4f;
+    border-color: #ff4d4f;
+  }
+
+  &--link {
+    color: #1890ff;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &--rounded {
+    border-radius: 5px;
+  }
+
+  &--circle {
+    border-radius: 20px;
+  }
+
+  &[disabled] {
+    border: unset;
+    background-color: #cccccc;
+    color: #666666;
+    cursor: not-allowed;
+    opacity: 0.6;
+
+    &:hover {
+      opacity: 0.6;
+    }
+  }
+
+  &--large {
+    padding: 15px 21px;
+    font-size: 16px;
+
+    &--dashed {
+      color: rgba(0, 0, 0, 0.85);
+    }
+  }
+
+  &--small {
+    padding: 5px 11px;
+    font-size: 12.5px;
+  }
+}

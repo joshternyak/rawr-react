@@ -13,7 +13,6 @@ function Card(props) {
       {props.img &&
       <img className="Card__img" src={props.img} alt={props.img} />
       }
-
       <h2
         className={`Card__title 
         ${props.size ? `Card__title--${props.size}` : ''} `}

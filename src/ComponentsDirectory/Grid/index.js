@@ -11,7 +11,7 @@ function Grid(props) {
   };
 
   return (
-    <div className="Grid" style={gridCustomStyles}>
+    <div className="Grid" key={props.index} style={gridCustomStyles}>
       {props.children}
     </div>
   );
