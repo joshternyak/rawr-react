@@ -1,0 +1,65 @@
+.Card {
+  background: white;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  padding: 1em 1.5em;
+  border-radius: 5px;
+  max-width: max-content;
+
+  @media (max-width: 1000px) {
+    padding: 0.75em 1.15em;
+  }
+
+  &--with-box-shadow {
+    box-shadow: 8px 10px 18px rgba(0, 0, 0, 0.08);
+  }
+
+  &--full-width {
+    width: 100%;
+    max-width: unset;
+  }
+
+  &--small {
+    padding: 0.5em 0.75em;
+
+    @media (max-width: 1000px) {
+      padding: 0.4em 0.6em;
+    }
+  }
+
+  &--large {
+    padding: 2em 2.25em;
+
+    @media (max-width: 1000px) {
+      padding: 1.5em 1.8em;
+    }
+  }
+
+  &__title {
+    font-size: 21px;
+    font-weight: 600;
+
+    &--small {
+      font-size: 18px;
+    }
+
+    &--large {
+      font-size: 24px;
+    }
+  }
+
+  &__subtitle {
+    font-size: 17.5px;
+
+    &--small {
+      font-size: 16px;
+    }
+
+    &--large {
+      font-size: 19px;
+    }
+  }
+
+  &__img {
+    width: 100%;
+  }
+}
