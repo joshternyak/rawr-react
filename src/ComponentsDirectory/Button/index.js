@@ -19,7 +19,8 @@ function Button(props) {
         {props.children}
       </button>;
   } else {
-    buttonNode = <a href="#" className="Button Button--link">{props.children}</a>;
+    buttonNode =
+      <a href="#" className="Button Button--link">{props.children}</a>;
   }
   return (
     [buttonNode]
