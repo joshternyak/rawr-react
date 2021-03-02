@@ -1,12 +1,14 @@
 import React from 'react';
 import Card from './ComponentsDirectory/Card';
 import Button from './ComponentsDirectory/Button';
+import Message from './ComponentsDirectory/Message';
 
 export const componentsList = [
   {
     name: 'Card',
     description: 'To group information together.',
-    when_to_use: 'A card makes grouping information together easy.',
+    whenToUse: 'A card makes grouping information together easy.',
+    howToUse: 'The Card component accepts three props: title, subtitle, and size.',
     examples: [
       <Card
         title={'Small Card'}
@@ -33,7 +35,9 @@ export const componentsList = [
   {
     name: 'Button',
     description: 'To trigger an operation.',
-    when_to_use: 'A button means an operation (or a series of operations). Clicking a button will trigger corresponding business logic.',
+    whenToUse: 'A button means an operation (or a series of operations). Clicking a button will trigger corresponding business logic.',
+    howToUse: 'The Button component accepts six props: text (as children),' +
+      ' type, size, disabled, rounded, circle.',
     examples: [
       <Button type={'primary'}>
         Primary
@@ -94,27 +98,68 @@ export const componentsList = [
     ],
   },
   {
+    name: 'Message',
+    description: 'To alert your users.',
+    whenToUse: 'When you want to alert your users certain information.',
+    howToUse: 'The Message component accepts three props: duration, type, and text',
+    examples:
+      <Card
+        title={'Messages alerts users'}
+        subtitle={''}>
+        <Message
+          duration={10000}
+          type={'regular'}
+          text={'This is a center aligned regular alert.'}
+        />
+        <Message
+          duration={10000}
+          placement={'topLeft'}
+          type={'success'}
+          text={'This is a topLeft aligned success alert.'}
+        />
+        <Message
+          duration={10000}
+          placement={'topRight'}
+          type={'warning'}
+          text={'This is a topRight aligned warning alert.'}
+        />
+        <Message
+          duration={10000}
+          placement={'bottomRight'}
+          type={'error'}
+          text={'This is a bottomRight aligned error alert.'}
+        />
+        <Message
+          duration={10000}
+          placement={'bottomLeft'}
+          type={'regular'}
+          text={'This is a bottomLeft aligned regular alert.'}
+        />
+
+      </Card>,
+  },
+  {
     name: 'Navbar',
     description: 'To make navigating your website easy.',
-    when_to_use: 'When you have multiple pages in your application or website.',
+    whenToUse: 'When you have multiple pages in your application or website.',
     examples: <Card />,
   },
   {
     name: 'Input',
     description: 'To get necessary data from your users.',
-    when_to_use: 'When your website needs to get info from your users.',
+    whenToUse: 'When your website needs to get info from your users.',
     examples: <Card />,
   },
   {
     name: 'Dropdown',
     description: 'For organizing a website with many pages',
-    when_to_use: 'When your website has many pages in the same category.',
+    whenToUse: 'When your website has many pages in the same category.',
     examples: <Card />,
   },
   {
     name: 'Grid',
     description: 'To organize information on your website.',
-    when_to_use: 'When you want to group information in an organized layout.',
+    whenToUse: 'When you want to group information in an organized layout.',
     examples: <Card />,
   },
 ];

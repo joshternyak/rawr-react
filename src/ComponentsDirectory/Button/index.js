@@ -28,7 +28,6 @@ function Button(props) {
 }
 
 Button.propTypes = {
-  text: PropTypes.string.isRequired,
   icon: PropTypes.node,
   type: PropTypes.string,
   size: PropTypes.string,
@@ -38,7 +37,6 @@ Button.propTypes = {
 };
 
 Button.defaultProps = {
-  text: 'Button',
   icon: '',
   type: '',
   size: '',

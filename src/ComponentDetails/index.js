@@ -3,7 +3,7 @@ import './style.scss';
 import Card from '../ComponentsDirectory/Card';
 import Grid from '../ComponentsDirectory/Grid';
 
-function ComponentDetails({ name, description, whenToUse, index, examples }) {
+function ComponentDetails({ name, description, whenToUse, howToUse, index, examples }) {
   return (
     <div className="ComponentDetails" key={index}>
       <h1 className="ComponentDetails__name">
@@ -16,6 +16,8 @@ function ComponentDetails({ name, description, whenToUse, index, examples }) {
       <p>{description}</p>
       <h2>When To Use</h2>
       <p>{whenToUse}</p>
+      <h2>How To Use</h2>
+      <p>{howToUse}</p>
       <h2>Examples</h2>
       <Card title={''} subtitle={''} fullWidth={true} withBoxShadow={true}>
         <Grid justifyContent={'start'} alignItems={'start'}>

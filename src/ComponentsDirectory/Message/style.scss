@@ -1,0 +1,118 @@
+.Message {
+  position: fixed;
+  top: 16px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1010;
+  box-sizing: border-box;
+  margin: 0;
+  color: rgba(0, 0, 0, 0.65);
+  font-size: 14px;
+  line-height: 100%;
+  list-style: none;
+  font-feature-settings: 'tnum';
+  max-height: 41px;
+  max-width: max-content;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.07);
+  padding: 0px 16px;
+  background: #fff;
+  border-radius: 4px;
+  transition: 0.2s;
+  animation-duration: 0.5s;
+  animation-name: centered-message;
+  display: flex;
+  align-items: center;
+
+  @keyframes centered-message {
+    0% {
+      top: -200px;
+    }
+
+    60% {
+      top: 30px;
+    }
+
+    80% {
+      top: 10px;
+    }
+
+    100% {
+      top: 16px;
+    }
+  }
+
+  &--topLeft,
+  &--topRight {
+    animation-name: centered-message;
+  }
+
+  &--topLeft,
+  &--bottomLeft {
+    left: 16px;
+  }
+
+  &--topRight,
+  &--bottomRight {
+    right: 16px;
+    left: unset;
+  }
+
+  &--bottomLeft,
+  &--bottomRight {
+    bottom: 16px;
+    top: unset;
+    animation-name: bottom-message;
+
+    @keyframes bottom-message {
+      0% {
+        bottom: -200px;
+      }
+
+      60% {
+        bottom: 30px;
+      }
+
+      80% {
+        bottom: 10px;
+      }
+
+      100% {
+        bottom: 16px;
+      }
+    }
+  }
+
+  &--topLeft,
+  &--topRight,
+  &--bottomLeft,
+  &--bottomRight {
+    transform: translateX(0);
+  }
+
+  &__icon {
+    border-radius: 50%;
+    width: 17px;
+    height: 17px;
+    margin-right: 7px;
+
+    svg {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &--fade-out {
+    animation-name: fade-out-message;
+    animation-duration: 0.5s;
+    opacity: 0;
+
+    @keyframes fade-out-message {
+      from {
+        opacity: 1;
+      }
+      to {
+        opacity: 0;
+      }
+    }
+  }
+}

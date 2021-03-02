@@ -23,7 +23,8 @@ function App() {
               key={index}
               description={componentItem.description}
               name={componentItem.name}
-              whenToUse={componentItem.when_to_use}
+              whenToUse={componentItem.whenToUse}
+              howToUse={componentItem.howToUse}
               examples={componentItem.examples}
             />;
         })}
