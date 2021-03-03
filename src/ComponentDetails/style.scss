@@ -5,8 +5,13 @@
   position: fixed;
   top: 0px;
   right: 0px;
-  min-height: 100vh;
+  height: 100vh;
   width: 80%;
+
+  &__name,
+  &__heading {
+    font-weight: 600;
+  }
 
   &__name {
     font-size: 40px;

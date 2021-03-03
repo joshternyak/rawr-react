@@ -13,24 +13,29 @@ function Card(props) {
       {props.img &&
       <img className="Card__img" src={props.img} alt={props.img} />
       }
+      {props.title &&
       <h2
         className={`Card__title 
         ${props.size ? `Card__title--${props.size}` : ''} `}
       >
         {props.title}
       </h2>
+      }
+      {props.subtitle &&
       <p className={`Card__subtitle 
         ${props.size ? `Card__subtitle--${props.size}` : ''} `}>
         {props.subtitle}
       </p>
+      }
+
       {props.children}
     </div>
   );
 }
 
 Card.propTypes = {
-  title: PropTypes.string.isRequired,
-  subtitle: PropTypes.string.isRequired,
+  title: PropTypes.string,
+  subtitle: PropTypes.string,
   img: PropTypes.string,
   children: PropTypes.any,
   icon: PropTypes.node,

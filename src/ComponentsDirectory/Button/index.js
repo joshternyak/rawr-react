@@ -11,6 +11,7 @@ function Button(props) {
       ${props.type ? `Button--${props.type}` : ''}
       ${props.rounded ? 'Button--rounded' : ''}
       ${props.circle ? 'Button--circle' : ''}
+      ${props.className !== '' ? props.className : ''}
       `}
         disabled={props.disabled}
         onClick={props.onClick}
@@ -34,6 +35,7 @@ Button.propTypes = {
   disabled: PropTypes.bool,
   rounded: PropTypes.bool,
   circle: PropTypes.bool,
+  className: PropTypes.string,
 };
 
 Button.defaultProps = {
@@ -43,6 +45,7 @@ Button.defaultProps = {
   disabled: false,
   rounded: false,
   circle: false,
+  className: '',
 };
 
 export default Button;

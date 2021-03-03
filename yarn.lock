@@ -7438,6 +7438,11 @@ react-is@^16.8.1, react-is@^16.8.4, react-is@^16.8.6:
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.8.6.tgz#5bbc1e2d29141c9fbdfed456343fe2bc430a6a16"
   integrity sha512-aUk3bHfZ2bRSVFFbbeVS4i+lNPZr3/WM5jT2J5omUVV1zzcs1nAaf3l51ctA5FFvCRbhrH0bdAsRRQddFJZPtA==
 
+react-swipeable@^6.0.1:
+  version "6.0.1"
+  resolved "https://registry.yarnpkg.com/react-swipeable/-/react-swipeable-6.0.1.tgz#14246e798c25a00da3279632a87811411756f652"
+  integrity sha512-69nonicgjT4ofeHxZSpjuz37BoIiWMEbUYkX0mdTCY2mX1U53XDzDUIOVKRg6vVBNGL+pxYjbRzmylXWORh1xQ==
+
 react-test-renderer@^16.13.0:
   version "16.13.0"
   resolved "https://registry.yarnpkg.com/react-test-renderer/-/react-test-renderer-16.13.0.tgz#39ba3bf72cedc8210c3f81983f0bb061b14a3014"

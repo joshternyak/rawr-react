@@ -2,6 +2,7 @@ import React from 'react';
 import Card from './ComponentsDirectory/Card';
 import Button from './ComponentsDirectory/Button';
 import Message from './ComponentsDirectory/Message';
+import Menu from './ComponentsDirectory/Menu';
 
 export const componentsList = [
   {
@@ -103,9 +104,7 @@ export const componentsList = [
     whenToUse: 'When you want to alert your users certain information.',
     howToUse: 'The Message component accepts three props: duration, type, and text',
     examples:
-      <Card
-        title={'Messages alerts users'}
-        subtitle={''}>
+      <>
         <Message
           duration={10000}
           type={'regular'}
@@ -135,14 +134,88 @@ export const componentsList = [
           type={'regular'}
           text={'This is a bottomLeft aligned regular alert.'}
         />
-
-      </Card>,
+      </>,
   },
   {
-    name: 'Navbar',
+    name: 'Menu',
     description: 'To make navigating your website easy.',
     whenToUse: 'When you have multiple pages in your application or website.',
-    examples: <Card />,
+    examples:
+      <>
+        <Menu links={[
+          {
+            url: '#',
+            text: 'Home',
+          },
+          {
+            url: '#',
+            text: 'About',
+          },
+          {
+            url: '#',
+            text: 'Contact',
+          },
+          {
+            url: '#',
+            text: 'Sign Up',
+          },
+        ]} />
+        <Menu theme={'dark'} links={[
+          {
+            url: '#',
+            text: 'Home',
+          },
+          {
+            url: '#',
+            text: 'About',
+          },
+          {
+            url: '#',
+            text: 'Contact',
+          },
+          {
+            url: '#',
+            text: 'Sign Up',
+          },
+        ]} />
+        <Menu btn={'Sign Up'} links={[
+          {
+            url: '#',
+            text: 'Home',
+          },
+          {
+            url: '#',
+            text: 'About',
+          },
+          {
+            url: '#',
+            text: 'Contact',
+          },
+          {
+            url: '#',
+            text: 'Log In',
+          },
+        ]} />
+        <Menu mode={'vertical'} links={[
+          {
+            url: '#',
+            text: 'Home',
+          },
+          {
+            url: '#',
+            text: 'About',
+          },
+          {
+            url: '#',
+            text: 'Contact',
+          },
+          {
+            url: '#',
+            text: 'Sign Up',
+          },
+        ]} />
+      </>
+    ,
   },
   {
     name: 'Input',
