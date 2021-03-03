@@ -140,6 +140,7 @@ export const componentsList = [
     name: 'Menu',
     description: 'To make navigating your website easy.',
     whenToUse: 'When you have multiple pages in your application or website.',
+    howToUse: 'The Menu component accepts four props: mode, theme, links, and btn.',
     examples:
       <>
         <Menu links={[
