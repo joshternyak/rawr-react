@@ -3,6 +3,7 @@ import Card from './ComponentsDirectory/Card';
 import Button from './ComponentsDirectory/Button';
 import Message from './ComponentsDirectory/Message';
 import Menu from './ComponentsDirectory/Menu';
+import Grid from './ComponentsDirectory/Grid';
 
 export const componentsList = [
   {
@@ -219,6 +220,27 @@ export const componentsList = [
     ,
   },
   {
+    name: 'Grid',
+    description: 'To organize information on your website.',
+    whenToUse: 'When you want to group information in an organized layout.',
+    howToUse: 'The Grid component accepts three props: display, justifyContent, and alignItems.',
+    examples:
+      <>
+        <Grid>
+          <Card />
+          <Card />
+          <Card />
+        </Grid>
+        <Grid>
+          <Card />
+          <Card />
+          <Card />
+          <Card />
+        </Grid>
+      </>
+    ,
+  },
+  {
     name: 'Input',
     description: 'To get necessary data from your users.',
     whenToUse: 'When your website needs to get info from your users.',
@@ -228,12 +250,6 @@ export const componentsList = [
     name: 'Dropdown',
     description: 'For organizing a website with many pages',
     whenToUse: 'When your website has many pages in the same category.',
-    examples: <Card />,
-  },
-  {
-    name: 'Grid',
-    description: 'To organize information on your website.',
-    whenToUse: 'When you want to group information in an organized layout.',
     examples: <Card />,
   },
 ];
