@@ -1,10 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Card from './ComponentsDirectory/Card';
 import Button from './ComponentsDirectory/Button';
 import Message from './ComponentsDirectory/Message';
 import Menu from './ComponentsDirectory/Menu';
 import Grid from './ComponentsDirectory/Grid';
 import Accordion from './ComponentsDirectory/Accordion';
+import Progress from './ComponentsDirectory/Progress';
 
 export const componentsList = [
   {
@@ -260,6 +261,16 @@ export const componentsList = [
           title="What is your return policy?"
           content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
         />
+      </div>,
+  },
+  {
+    name: 'Progress',
+    description: 'Display the current progress of an operation flow.',
+    whenToUse: 'When you need to display the completion percentage of an operation.',
+    howToUse: 'The Progress component accepts one prop: percent.',
+    examples:
+      <div>
+        <Progress percent={30} />
       </div>,
   },
   {
