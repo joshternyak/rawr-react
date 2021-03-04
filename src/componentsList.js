@@ -4,6 +4,7 @@ import Button from './ComponentsDirectory/Button';
 import Message from './ComponentsDirectory/Message';
 import Menu from './ComponentsDirectory/Menu';
 import Grid from './ComponentsDirectory/Grid';
+import Accordion from './ComponentsDirectory/Accordion';
 
 export const componentsList = [
   {
@@ -239,6 +240,26 @@ export const componentsList = [
         </Grid>
       </>
     ,
+  },
+  {
+    name: 'Accordion',
+    description: 'A content area which can be collapsed and expanded.',
+    whenToUse: 'Can be used to group or hide complex regions to keep the page clean.',
+    examples:
+      <div>
+        <Accordion
+          title="What is your return policy?"
+          content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        />
+        <Accordion
+          title="What is your return policy?"
+          content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        />
+        <Accordion
+          title="What is your return policy?"
+          content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        />
+      </div>,
   },
   {
     name: 'Input',

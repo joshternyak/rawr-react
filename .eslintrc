@@ -1,12 +1,17 @@
 {
-  "extends": ["rishikc"],
+  "extends": [
+    "rishikc",
+    "plugin:react-hooks/recommended"
+  ],
   "globals": {
     "cy": true
   },
   "settings": {
     "import/resolver": {
       "node": {
-        "paths": ["src"]
+        "paths": [
+          "src"
+        ]
       }
     }
   },
@@ -19,6 +24,11 @@
       {
         "argsIgnorePattern": "res|next|stage|^err|on|config"
       }
-    ]
-  }
+    ],
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn"
+  },
+  "plugins": [
+    "react-hooks"
+  ]
 }
