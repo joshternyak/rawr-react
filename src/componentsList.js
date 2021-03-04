@@ -245,6 +245,7 @@ export const componentsList = [
     name: 'Accordion',
     description: 'A content area which can be collapsed and expanded.',
     whenToUse: 'Can be used to group or hide complex regions to keep the page clean.',
+    howToUse: 'The Accordion component accepts two props: title and content.',
     examples:
       <div>
         <Accordion
