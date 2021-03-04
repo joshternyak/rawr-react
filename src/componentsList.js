@@ -6,6 +6,7 @@ import Menu from './ComponentsDirectory/Menu';
 import Grid from './ComponentsDirectory/Grid';
 import Accordion from './ComponentsDirectory/Accordion';
 import Progress from './ComponentsDirectory/Progress';
+import Switch from './ComponentsDirectory/Switch';
 
 export const componentsList = [
   {
@@ -272,6 +273,36 @@ export const componentsList = [
       <div>
         <Progress percent={30} />
       </div>,
+  },
+  {
+    name: 'Switch',
+    description: 'Switching Selector.',
+    whenToUse: 'If you need to represent the switching between two states or on-off state.',
+    howToUse: 'The Switch component accepts five props: checked, btnContent,' +
+      ' disabled, unCheckedChildren, and checkedChildren.',
+    examples:
+      <>
+        <Grid alignItems={'center'}>
+          <h5>Regular switch</h5>
+          <Switch />
+          <h5>Disabled switch</h5>
+          <Switch disabled />
+          <h5>Switch with btnContent</h5>
+          <Switch btnContent={'🔥'} />
+        </Grid>
+        <Grid alignItems={'center'}>
+          <h5>Switch with unCheckedChildren</h5>
+          <Switch unCheckedChildren={'Hi'} />
+          <h5>Switch with checkedChildren</h5>
+          <Switch checkedChildren={'Hi'} />
+          <h5>Crazy cool switch</h5>
+          <Switch
+            btnContent={'🔥'}
+            checkedChildren={'Hi'}
+            unCheckedChildren={'Hi'}
+          />
+        </Grid>
+      </>,
   },
   {
     name: 'Input',
