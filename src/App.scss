@@ -30,3 +30,42 @@
     }
   }
 }
+
+.ComponentTabsList {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  height: 100vh;
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  padding: 0;
+  border-right: 2px solid #e6f7ff;
+
+  &__title {
+    padding: 0.2em 1em;
+  }
+}
+
+.Component {
+  padding: 1em;
+  cursor: pointer;
+  transition: 0.2s;
+  width: 100%;
+  text-align: left;
+  background: #e6f7ff;
+
+  &:hover {
+    background: #e6f7ff;
+  }
+
+  &--inactive {
+    background: transparent;
+
+    &:hover {
+      background: transparent;
+    }
+  }
+}

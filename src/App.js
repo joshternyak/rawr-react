@@ -1,7 +1,5 @@
 import React, { useState } from 'react';
 import './App.scss';
-import './ComponentTabsList/style.scss';
-import './ComponentTabsList/Component/style.scss';
 import ComponentDetails from './ComponentDetails';
 import { componentsList } from './componentsList';
 import Grid from './ComponentsDirectory/Grid';
