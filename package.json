@@ -25,6 +25,7 @@
     "prop-types": "^15.7.2",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
+    "react-router-dom": "^5.2.0",
     "react-swipeable": "^6.0.1"
   },
   "devDependencies": {

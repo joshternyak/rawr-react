@@ -10,12 +10,39 @@
   margin: 0px;
   transition: 0.2s;
 
-  &__toggle-theme-btn {
-    cursor: pointer;
+  &__navbar {
     position: fixed;
     z-index: 4;
-    right: 50%;
+    right: 20px;
     top: 20px;
+    display: flex;
+    align-items: center;
+
+    &-list {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      &-item {
+        font-size: 18px;
+        list-style-type: none;
+        padding: 0px 10px;
+
+        &-link {
+          text-decoration: none;
+          transition: 0.2s;
+
+          &:hover {
+            opacity: 0.8;
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+
+  &__toggle-theme-btn {
+    cursor: pointer;
     background: lightblue;
     border-radius: 5px;
     outline: none;
@@ -24,10 +51,15 @@
     width: 45px;
     height: 45px;
     font-size: 24px;
+    margin: 0px 20px;
 
     &:hover {
       transform: scale(1.2);
     }
+  }
+
+  &__info-page-title {
+    padding: 2rem;
   }
 }
 
