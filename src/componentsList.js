@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Card from './ComponentsDirectory/Card';
 import Button from './ComponentsDirectory/Button';
 import Message from './ComponentsDirectory/Message';
@@ -303,17 +303,5 @@ export const componentsList = [
           />
         </Grid>
       </>,
-  },
-  {
-    name: 'Input',
-    description: 'To get necessary data from your users.',
-    whenToUse: 'When your website needs to get info from your users.',
-    examples: <Card />,
-  },
-  {
-    name: 'Dropdown',
-    description: 'For organizing a website with many pages',
-    whenToUse: 'When your website has many pages in the same category.',
-    examples: <Card />,
   },
 ];

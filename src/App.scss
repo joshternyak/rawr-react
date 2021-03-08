@@ -8,4 +8,25 @@
   left: 0px;
   top: 0px;
   margin: 0px;
+  transition: 0.2s;
+
+  &__toggle-theme-btn {
+    cursor: pointer;
+    position: fixed;
+    z-index: 4;
+    right: 50%;
+    top: 20px;
+    background: lightblue;
+    border-radius: 5px;
+    outline: none;
+    transition: 0.2s all ease-in-out;
+    border: none;
+    width: 45px;
+    height: 45px;
+    font-size: 24px;
+
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
 }

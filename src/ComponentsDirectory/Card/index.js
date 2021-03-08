@@ -1,13 +1,16 @@
 import React from 'react';
 import './style.scss';
 import PropTypes from 'prop-types';
+import { ThemeContext } from '../../contexts/theme';
 
 function Card(props) {
+  const { dark } = React.useContext(ThemeContext);
   return (
     <div
       className={`Card ${props.withBoxShadow ? 'Card--with-box-shadow' : ''} 
       ${props.fullWidth ? 'Card--full-width' : ''} 
       ${props.size ? `Card--${props.size}` : ''} `}
+      style={{ color: dark ? '#242424' : 'inherit' }}
     >
       {props.icon && props.icon}
       {props.img &&

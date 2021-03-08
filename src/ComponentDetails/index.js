@@ -2,12 +2,17 @@ import React from 'react';
 import './style.scss';
 import Card from '../ComponentsDirectory/Card';
 import Grid from '../ComponentsDirectory/Grid';
+import { ThemeContext } from '../contexts/theme';
 
 function ComponentDetails({ name, description, whenToUse, howToUse, examples }) {
+  const { dark } = React.useContext(ThemeContext);
   return (
     <div className="ComponentDetails">
       <h1 className="ComponentDetails__name">
-        <code className="ComponentDetails__name-code">
+        <code
+          className="ComponentDetails__name-code"
+          style={{ color: dark ? '#242424' : 'inherit' }}
+        >
           {'<'}
           {name}
           {'/>'}
