@@ -57,9 +57,15 @@ function App() {
           </Route>
           <Route path="/about">
             <h2 className="App__info-page-title">About Us</h2>
+            <p>A react component library I (<a href="https://joshternyak.com">Josh
+              Ternyak</a>) built to teach myself React.</p>
           </Route>
           <Route path="/contact">
             <h2 className="App__info-page-title">Contact</h2>
+            <p><p>You can contact me on my <a
+              href="https://joshternyak.com/contact">personal website</a> or <a
+              href="mailto:joshternyak@gmail.com">email Josh Ternyak</a>.</p>
+            </p>
           </Route>
         </Switch>
       </div>
