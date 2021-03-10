@@ -2,7 +2,7 @@
   text-align: center;
   display: flex;
   justify-content: space-between;
-  height: 100vh;
+  min-height: 100vh;
   width: 100vw;
   position: fixed;
   left: 0px;
@@ -58,8 +58,9 @@
     }
   }
 
-  &__info-page-title {
-    padding: 2rem;
+  &__info-page {
+    text-align: left;
+    padding: 4rem;
   }
 }
 

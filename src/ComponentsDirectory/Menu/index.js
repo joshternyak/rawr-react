@@ -1,12 +1,10 @@
 import React from 'react';
 import './style.scss';
 import PropTypes from 'prop-types';
-import DarkLogo from '../../static/images/dark-logo.svg';
-import LightLogo from '../../static/images/light-logo.svg';
+import Logo from '../../static/images/logo.png';
 import Button from '../Button';
 
 function Menu(props) {
-  const Logo = props.theme === 'light' ? DarkLogo : LightLogo;
   return (
     <div
       className={`Menu ${props.theme === 'dark' ? 'Menu--dark' : ''} 

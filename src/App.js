@@ -56,16 +56,10 @@ function App() {
             <Home />
           </Route>
           <Route path="/about">
-            <h2 className="App__info-page-title">About Us</h2>
-            <p>A react component library I (<a href="https://joshternyak.com">Josh
-              Ternyak</a>) built to teach myself React.</p>
+            <About />
           </Route>
           <Route path="/contact">
-            <h2 className="App__info-page-title">Contact</h2>
-            <p><p>You can contact me on my <a
-              href="https://joshternyak.com/contact">personal website</a> or <a
-              href="mailto:joshternyak@gmail.com">email Josh Ternyak</a>.</p>
-            </p>
+            <Contact />
           </Route>
         </Switch>
       </div>
@@ -119,6 +113,29 @@ function ComponentTabsList({ setActiveTab, activeTab, title }) {
           </div>
         );
       })}
+    </div>
+  );
+}
+
+function About() {
+  return (
+    <div className="App__info-page">
+      <h2>About Us</h2>
+      <p>Hey! I'm <a href="https://joshternyak.com">Josh
+        Ternyak</a>, a front-end web developer. I built this react component
+        library to teach myself React.</p>
+    </div>
+  );
+}
+
+function Contact() {
+  return (
+    <div className="App__info-page">
+      <h2>Contact</h2>
+      <p><p>You can contact me on my <a
+        href="https://joshternyak.com/contact">personal website</a> or <a
+        href="mailto:joshternyak@gmail.com">email Josh Ternyak</a>.</p>
+      </p>
     </div>
   );
 }
